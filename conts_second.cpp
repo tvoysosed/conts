@@ -52,9 +52,9 @@ vector<Entity> suggest(const Dict& d, const string& current_word) {
 //для тестирования
 int main() {
 
-	multimap<string, Entity> dict = load("db.txt");
+	multimap<string, Entity> dict = load("dictionary.txt");
 	if (dict.size()) {
-		cout << "Словарь полученный из файла db.txt:" << endl;
+		cout << "Словарь полученный из файла dictionary.txt:" << endl;
 		for (auto i : dict) {
 			cout << i.first << " -> " << i.second << endl;
 		}
